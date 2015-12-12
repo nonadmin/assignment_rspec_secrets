@@ -33,9 +33,16 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 
 group :development do
+  gem 'guard-rspec'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
+
+group :test, :development do
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'rspec-rails'
+end
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
